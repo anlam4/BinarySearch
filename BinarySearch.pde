@@ -33,7 +33,7 @@ public int recursiveLinearSearch(int catNumToFind, int startIndex)
 {
   if(startIndex >= store.length)
     return -1;
-  else if(store[startIndex] == catNumToFind)
+  else if(store[startIndex].getCatNum() == catNumToFind)
     return store[startIndex].getInventory();
   return recursiveLinearSearch(catNumToFind, startIndex+1);
 }
@@ -116,9 +116,3 @@ public void draw()
 {
   //empty!
 }
-
-
-
-
-
-
